@@ -10,7 +10,7 @@ def pdf_to_mp3(file_path='test.pdf', lanquage='en'):
        return 'File not exists, check the file path!'
 
    def main():
-       print(pdf_to_mp3())
+       print(pdf_to_mp3(file_path='\Users\Andry\PycharmProjects\myProjectsgit\PDF_to-MP3\pdf_files\geely-atlas.pdf'))
 
 
 if __name__ == '__main__':
