@@ -1,15 +1,21 @@
-# Находит средне арифметическое с точностью терех знаков после запятой(точки).
+# Находит средне арифметическое с точностью трех знаков после запятой(точки).
 
 from statistics import mean
 
+length_array  = None
+while length_array  == None:
+    try:
+        length_array = int(input('Enter array length: '))
+    except ValueError:
+        print('Error! Enter array length!')
 
-length_array = int(input('Enter array length: '))
+numbers = []
 
 i = 0
-while i <= length_array:
+while i < length_array:
     try:
         string = 'Enter number № ' + str(i+1) + ': '
-        numbers = float(input(string))
+        numbers.append(float(input(string)))
         i += 1
     except ValueError:
         print('Error! Enter only numbers!')
