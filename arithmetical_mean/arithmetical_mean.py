@@ -2,6 +2,7 @@
 
 from statistics import mean
 
+
 length_array  = None
 while length_array  == None:
     try:
